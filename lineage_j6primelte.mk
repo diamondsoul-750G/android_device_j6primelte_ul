@@ -24,7 +24,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
 PRODUCT_BRAND := samsung
 PRODUCT_DEVICE := j6primelte
@@ -35,7 +35,7 @@ PRODUCT_MODEL := Galaxy J6+
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 TARGET_VENDOR := samsung
 TARGET_VENDOR_PRODUCT_NAME := j6primelte
-PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="j6primeltedd-user 12 SQ3A.220705.004 J610FXXU8CWH2 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="j6primeltedd-user 13 TQ3A.230901.001 J610FXXU8CWH2 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "samsung/j6primeltedd/j6primelte:12/SQ3A.220705.004/J610FXXU8CWH2:user/release-keys"
+BUILD_FINGERPRINT := "samsung/j6primeltedd/j6primelte:13/TQ3A.230901.001/J610FXXU8CWH2:user/release-keys"
